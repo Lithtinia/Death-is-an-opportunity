@@ -23,7 +23,7 @@ namespace Vivi
         public void OnTriggerStay2D(Collider2D other)
         {
             speachbyble.enabled = true;
-            if (Input.GetKeyDown(KeyCode.T))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                   
                 DM.StartT(this);
