@@ -17,5 +17,7 @@ public class choicemade : MonoBehaviour
            GM.CorrectC = GM.CorrectC+ 1;
            
        }
+       
+       Destroy(other.gameObject);
    }
 }
