@@ -8,12 +8,12 @@ public class DialougueMAN : MonoBehaviour
     private DialougeSO CC;
     private int stepnum;
     private bool TT;
-    private String CName;
-    private Sprite CPortage;
+   // private String CName;
+   // private Sprite CPortage;
         
     public GameObject UIDia;
-    public TMP_Text Playername;
-    public Image oc;
+    //public TMP_Text Playername;
+    //public Image oc;
     public TMP_Text talky;
     public ActorsSO[] ASO;
     void Start()
@@ -24,7 +24,7 @@ public class DialougueMAN : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TT && Input.GetKeyDown(KeyCode.T))
+        if (TT && Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (stepnum >= CC.actors.Length)
             {
@@ -48,8 +48,8 @@ public class DialougueMAN : MonoBehaviour
         {
             SetActorInfor(true);
         }
-        Playername.text = CName;
-        oc.sprite = CPortage;
+       // Playername.text = CName;
+       // oc.sprite = CPortage;
         talky.text = CC.Talking[stepnum];
         UIDia.SetActive(true);
         stepnum += 1;
@@ -69,8 +69,8 @@ public class DialougueMAN : MonoBehaviour
             {
                 if (ASO[i].name == CC.actors[stepnum].ToString())
                 {
-                    CName = ASO[i].Names;
-                    CPortage = ASO[i].charaters;
+                    // CName = ASO[i].Names;
+                   // CPortage = ASO[i].charaters;
                 }
                
             }

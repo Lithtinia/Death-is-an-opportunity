@@ -5,9 +5,9 @@ using UnityEngine;
 public class DialougeSO : ScriptableObject
 {
     public Actors[] actors;
-    public Sprite charater;
+    //public Sprite charater;
 
-    public String Name;
+    //public String Name;
 
 [Header("boring talking stuff")]
 [TextArea]
