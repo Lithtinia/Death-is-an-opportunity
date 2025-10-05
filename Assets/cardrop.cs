@@ -2,20 +2,26 @@ using UnityEngine;
 using Vivi;
 public class cardrop : MonoBehaviour
 {
-    public soulcarstuff SCS;
+    public GameObject SCS;
     public NPCmovement NPCM;
     public void OnTriggerEnter(Collider other)
     {
-        SCS = other.gameObject.GetComponent<soulcarstuff>();
+        SCS = other.gameObject;
         NPCM = other.gameObject.GetComponent<NPCmovement>();
 
-        NPCM.stop();
+       
         if (Input.GetKeyDown(KeyCode.B))
         {
-
-            SCS.GetComponent<Rigidbody>().useGravity = true;
+            hellchoice();
         }
     }
 
+    public void hellchoice()
+    {
+        NPCM.moveon();
+        SCS.GetComponent<Rigidbody>().useGravity = true;
+            
+        
+    }
 }
 

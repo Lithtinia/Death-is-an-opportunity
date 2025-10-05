@@ -24,7 +24,7 @@ public class DialougueMAN : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TT && Input.GetKeyDown(KeyCode.Mouse0))
+        if (TT && Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (stepnum >= CC.actors.Length)
             {

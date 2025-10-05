@@ -23,7 +23,7 @@ namespace Vivi
         public void OnTriggerStay(Collider other)
         {
            // speachbyble.enabled = true;
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 if (other.gameObject.CompareTag("Player"))
                 {

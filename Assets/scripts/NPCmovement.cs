@@ -8,7 +8,8 @@ public class NPCmovement : MonoBehaviour
 {
     public float speed = 10f;
     public Rigidbody RB;
-    public carmovment carmovment;
+    public object npcm;
+
 
     public void Start()
     {
@@ -16,13 +17,15 @@ public class NPCmovement : MonoBehaviour
     }
 
     void FixedUpdate()
-    {
+    { 
         if (Input.GetKeyDown(KeyCode.I))
         {
-            carmovment.enabled = false;
+            
             moveon();
             
         }
+        
+       
     }
 
     // Update is called once per frame
@@ -34,6 +37,11 @@ public class NPCmovement : MonoBehaviour
     public void stop()
     {
         RB.linearVelocity = Vector3.zero;
+    }
+
+    public void drop()
+    {
+        RB.useGravity = true;
     }
 }
 }
