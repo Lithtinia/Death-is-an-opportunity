@@ -24,7 +24,7 @@ public class Menubuttons : MonoBehaviour
     {
         Application.Quit();
         /// for debugging purposes 
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 
     public void continuegame()
