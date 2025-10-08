@@ -18,7 +18,7 @@ public class NPCmovement : MonoBehaviour
 
     void FixedUpdate()
     { 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             
             moveon();
